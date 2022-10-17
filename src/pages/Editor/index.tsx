@@ -17,10 +17,15 @@ const Editor: React.FC<Props> = ({ content }) => {
   const setLink = () => {
     document.execCommand("createLink", false, "https://www.naver.com");
   };
+
   useEffect(() => {
     if (editorRef.current) {
       editorRef.current.innerHTML = content;
     }
+    document.addEventListener("selectionchange", (e: any) => {
+      console.log(window.getSelection()?.getRangeAt(0));
+      console.log(window.getSelection()?.toString());
+    });
   }, []);
 
   return (

@@ -8,6 +8,7 @@ import Select from "./pages/Select";
 import Editor from "./pages/Editor";
 import SlideForm from "./pages/SlideForm";
 import Skeleton from "./pages/Skeleton";
+import Infinite from "./pages/Infinite";
 
 function App() {
   const ref = useRef<HTMLInputElement>(null);
@@ -35,12 +36,13 @@ function App() {
       {/* <TestBox>
         <Editor content="<b>안녕하세요 저의</b> 이름은 문재민입니다.<div><br></div><div>저의 별명은 문제가 있는 문재민입니다.</div><div><br></div><div><br></div><div><br></div><div><br></div><div>나이는 20살이지만 27살 형한테 대드는 것이 취미입니다.</div>" />
       </TestBox> */}
-      <TestBox>
+      {/* <TestBox>
         <Skeleton style={{ width: "300px", height: "100px" }} />
       </TestBox>
       <TestBox>
         <Skeleton style={{ width: "300px", height: "100px" }} type="blink" />
-      </TestBox>
+      </TestBox> */}
+      <Infinite />
     </div>
   );
 }

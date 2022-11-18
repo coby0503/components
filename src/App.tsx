@@ -4,11 +4,13 @@ import Input from "./pages/Input";
 import Uploader from "./pages/Uploader";
 import styled from "styled-components";
 import Button from "./pages/Button";
-import Select from "./pages/Select";
+import Select from "./pages/Dropdown";
 import Editor from "./pages/Editor";
 import SlideForm from "./pages/SlideForm";
 import Skeleton from "./pages/Skeleton";
 import Infinite from "./pages/Infinite";
+import TS from "./pages/TS";
+import Dropdown from "./pages/Dropdown";
 
 function App() {
   const ref = useRef<HTMLInputElement>(null);
@@ -18,31 +20,10 @@ function App() {
   }, []);
   return (
     <div className="App">
-      {/* <TestBox>
-        <Input ref={ref} />
-      </TestBox>
       <TestBox>
-        <Uploader />
+        <Dropdown />
       </TestBox>
-      <TestBox>
-        <Button />
-      </TestBox>
-      <TestBox>
-        <Select />
-      </TestBox>
-      <TestBox>
-        <SlideForm />
-      </TestBox> */}
-      {/* <TestBox>
-        <Editor content="<b>안녕하세요 저의</b> 이름은 문재민입니다.<div><br></div><div>저의 별명은 문제가 있는 문재민입니다.</div><div><br></div><div><br></div><div><br></div><div><br></div><div>나이는 20살이지만 27살 형한테 대드는 것이 취미입니다.</div>" />
-      </TestBox> */}
-      {/* <TestBox>
-        <Skeleton style={{ width: "300px", height: "100px" }} />
-      </TestBox>
-      <TestBox>
-        <Skeleton style={{ width: "300px", height: "100px" }} type="blink" />
-      </TestBox> */}
-      <Infinite />
+      {/* <TS /> */}
     </div>
   );
 }
